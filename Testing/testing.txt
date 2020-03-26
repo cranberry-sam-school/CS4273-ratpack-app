@@ -1,5 +1,0 @@
-unit tests
-
-system tests
-
-acceptance tests
