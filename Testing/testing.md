@@ -3,7 +3,7 @@
 
  Because of the intermittent development capability in our group, we have structured semi-weekly meetings where we have necessary discussions as well as active development work on the project. Many of these meetings center around the prototyped implementation of a given feature or integration, as well as manual testing of these works. The next step is generally a discussion about the plan for more rigorous manual and automated testing, including unit tests, and work on implementation of those in parallel with further development of the feature. Generally, the person working on the feature is also responsible for guiding the tests for it as they have the most intimate knowledge of the possibilities, but all team members continue to provide input, action and perspectives on tests in particular.
 
-# unit tests - Gregory
+# unit tests
 
 There are two main areas of our project that need to have extensive testing: the config and models modules. These two areas represent the vast majority of the project's functionality. 
 
