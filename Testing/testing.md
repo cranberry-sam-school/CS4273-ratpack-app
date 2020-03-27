@@ -11,9 +11,9 @@ Unit testing will allow us to test the individual functions inside each of these
 
 ## Current Tests
 
-We currently use Go's built-in system for testing: a name_test.go file accompanies every file of code for which tests exist. Our CI/CD environment runs these tests inside a custom docker image containing all of the project's dependencies. Simulataneously, Go's vet tool is also run on the code to check for common coding mistakes that may have severe impact on functionality.
+We currently use Go's built-in system for testing: a name_test.go file accompanies every file of code for which tests exist. Our CI/CD environment runs these tests inside a custom docker image containing all of the project's dependencies. Simultaneously, Go's vet tool is also run on the code to check for common coding mistakes that may have severe impact on functionality.
 
-At present slighly less than 40% of our code is covered by the existing tests in the config and models modules. The config module handles loading in the configuration file, and validating that all of the private files needed to run have sufficiently strict file permissions as to be unreadable by other users of the system. The models module provides structures for information in the database, allowing the handling of these data to be abstracted signficantly.
+At present slighly less than 40% of our code is covered by the existing tests in the config and models modules. The config module handles loading in the configuration file, and validating that all of the private files needed to run have sufficiently strict file permissions as to be unreadable by other users of the system. The models module provides structures for information in the database, allowing the handling of these data to be abstracted significantly.
 
 ## Future Directions
 
@@ -38,5 +38,5 @@ An acceptance test involves looking at our application, and verifying it perform
 
 ## Future Directions
 
-When the application is complete, acceptance testing can begin in earnest. We will start by verifying that our application meets the specifications given to us. Since those specifications are sparse, we can use common sense for what is necessary for a contacts app: can you creat a new contact, can you edit a contact, can you view your own contact card, etc.. Once we have verified that the application meets the basic specifications, we can start testing for edge cases: can you create two contacts with the same information, what happens if you exit the application while editing a contact, can you delete your own contact card, etc.. Once we have reached a point that we believe all, or most, of the edge cases have been handled, we are able to move on to deployment.
+When the application is complete, acceptance testing can begin in earnest. We will start by verifying that our application meets the specifications given to us. Since those specifications are sparse, we can use common sense for what is necessary for a contacts app: can you create a new contact, can you edit a contact, can you view your own contact card, etc.. Once we have verified that the application meets the basic specifications, we can start testing for edge cases: can you create two contacts with the same information, what happens if you exit the application while editing a contact, can you delete your own contact card, etc.. Once we have reached a point that we believe all, or most, of the edge cases have been handled, we are able to move on to deployment.
 
