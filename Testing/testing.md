@@ -27,8 +27,8 @@
 
 # system tests
 
-- describe our interpretation of a system test
-- discuss our implementation
+- System tests are a simple but effective mode of testing in which the developers use, populate, and exam the software in a simulated environment similar to that in which it will be used
+- This stage of testing has consisted primarily of running setup-db, as well as each of the other setup programs, then pinging the server to ensure that the user was created properly. Then the database is filled with dummy data to check the structure of the database. The next step will be to run all the setup programs then access the app to see that the filled database shows the proper contacts and information, as well as checking for any frontend bugs. All tests should be done with proper and accurate data/input, as well as data it is not designed to handle. The latter is to make sure the software doesn't break upon improper usage.
 
 ## current tests
 
