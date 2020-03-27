@@ -23,21 +23,10 @@ One of the major blockers on this is that we have not yet selected a mocking fra
 
 # system tests
 
-- System tests are a simple but effective mode of testing in which the developers use, populate, and exam the software in a simulated environment similar to that in which it will be used
-- This stage of testing has consisted primarily of running setup-db, as well as each of the other setup programs, then pinging the server to ensure that the user was created properly. Then the database is filled with dummy data to check the structure of the database. The next step will be to run all the setup programs then access the app to see that the filled database shows the proper contacts and information, as well as checking for any frontend bugs. All tests should be done with proper and accurate data/input, as well as data it is not designed to handle. The latter is to make sure the software doesn't break upon improper usage.
+System tests are a simple but effective mode of testing in which the developers use, populate, and exam the software in a simulated environment similar to that in which it will be used
 
-## current tests
+This stage of testing has consisted primarily of running setup-db, as well as each of the other setup programs, then pinging the server to ensure that the user was created properly. Then the database is filled with dummy data to check the structure of the database. The next step will be to run all the setup programs then access the app to see that the filled database shows the proper contacts and information, as well as checking for any frontend bugs. All tests should be done with proper and accurate data/input, as well as data it is not designed to handle. The latter is to make sure the software doesn't break upon improper usage.
 
-- login testing
-- manually focused (case-by-case basis as features are expanded)
-- integrating different parts of the applications
-
-## future directions
-
-- discuss what definitely would have been testing
-- how do we plan to handle deployment
-- discuss a more rigorous
-- final testing is not feasible without more discussion with the client
 
 # acceptance tests
 
@@ -49,14 +38,5 @@ An acceptance test involves looking at our application, and verifying it perform
 
 ## future directions
 
-When the application is complete, acceptance testing can begin in earnest. We will start by verifying that our application meets the specifications given to us. Since those specifications are sparse, we can use common sense for what is necessary for a contacts app: can you creat a new contact, can you edit a contact, can you view your own contact card, etc.. Once we have verified that the application meets the basic specifications, we can start testing for edge cases: can you create two contacts with the same information, what happens if you exit the application while editing a contact, can you delete your own contact card, etc.. Once we have reached a point that we believe all, or most, of the edge cases have been handled, we are able to move on to deployment.# current tests
+When the application is complete, acceptance testing can begin in earnest. We will start by verifying that our application meets the specifications given to us. Since those specifications are sparse, we can use common sense for what is necessary for a contacts app: can you creat a new contact, can you edit a contact, can you view your own contact card, etc.. Once we have verified that the application meets the basic specifications, we can start testing for edge cases: can you create two contacts with the same information, what happens if you exit the application while editing a contact, can you delete your own contact card, etc.. Once we have reached a point that we believe all, or most, of the edge cases have been handled, we are able to move on to deployment.
 
-- have bi-weekly on-going discussions about features that are being implemented, verifying that those features meet the requirements given
-
-An acceptance test involves looking at our application, and verifying it performs all of the requirements accurately. Acceptance tests could also be called quality assurance tests. Given this, many of our acceptance tests cannot be properly performed until the application is complete. That being said, we have been assuring the quality of our application through bi-weekly group meetings. During these group meetings, we discuss the current state of the app, and any new features that have been implemented. When discussing these new features, we take time to ensure that our implementation meets the specifications given by our project manager. For example, during the design phase of our application, after the design document was created, each member of the group reviewed the design, and verified commented on sections that were missing, unnecessary, or otherwise not a part of the specifications.
-
-## future directions
-
-- communication with the client has been halted and in flux, so requirements are not clear. We are basing our requirements off of the last contact we had with Hock
-
-- Military and Regular users can perform the outlined actions as expected
