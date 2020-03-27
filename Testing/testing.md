@@ -3,7 +3,7 @@
 
  Because of the intermittent development capability in our group, we have structured semi-weekly meetings where we have necessary discussions as well as active development work on the project. Many of these meetings center around the prototyped implementation of a given feature or integration, as well as manual testing of these works. The next step is generally a discussion about the plan for more rigorous manual and automated testing, including unit tests, and work on implementation of those in parallel with further development of the feature. Generally, the person working on the feature is also responsible for guiding the tests for it as they have the most intimate knowledge of the possibilities, but all team members continue to provide input, action and perspectives on tests in particular.
 
-# unit tests
+# unit tests - Gregory
 
 There are two main areas of our project that need to have extensive testing: the config and models modules. These two areas represent the vast majority of the project's functionality. 
 
@@ -39,13 +39,16 @@ One of the major blockers on this is that we have not yet selected a mocking fra
 - discuss a more rigorous
 - final testing is not feasible without more discussion with the client
 
-# acceptance tests
+# acceptance tests - Sam
 
 - does the application meets the specifications of the client
+Acceptance tests are used to verify that our application meets the specifications given to us by the client. At first, these specifications were to create a full featured application with messaging, scheduling, contacts, and calendar features. Later in the project, our client asked us to focus more on creating a contacts app. Since this is the last contact we have had with our sponsor, we have continued to work under that specification; however vague it might be.
 
 ## current tests
 
 - have bi-weekly on-going discussions about features that are being implemented, verifying that those features meet the requirements given
+
+An acceptance test involves looking at our application, and verifying it performs all of the requirements accurately. Acceptance tests could also be called quality assurance tests. Given this, many of our acceptance tests cannot be properly performed until the application is complete. That being said, we have been assuring the quality of our application through bi-weekly group meetings. During these group meetings, we discuss the current state of the app, and any new features that have been implemented. When discussing these new features, we take time to ensure that our implementation meets the specifications given by our project manager. For example, during the design phase of our application, after the design document was created, each member of the group reviewed the design, and verified commented on sections that were missing, unnecessary, or otherwise not a part of the specifications.
 
 ## future directions
 
