@@ -7,16 +7,22 @@ EX: ./setup-db.sh --perform-install --host hostname --port portnumber
 ## Client Setup
 1. Download file
 2. Move to proper location and Unzip
-3. cd ./[directory location]/ratpack-client/ratpackClient
+3. `cd ./[directory location]/ratpack-client/ratpackClient`
 
 4.  Install programs required to start the application
+
+```
 brew install node
 brew install watchman
 sudo gem install cocoapods # optional
+```
 
 5. Prepare the application
+
+```
 yarn install
 npm start
+```
 
 This command will also install expo, when asked if you would like to continue with the expo instillation, press ‘y’.
 
