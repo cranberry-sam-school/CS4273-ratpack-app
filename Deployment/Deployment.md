@@ -46,14 +46,12 @@ brew install watchman
 sudo gem install cocoapods # optional
 ```
 
-5. Prepare the application
+5. Prepare and start the application. The command `npm start` will automactially try to install expo, when asked if you would like to continue with the expo instillation, press ‘y’.
 
 ```
 yarn install
 npm start
 ```
-
-This command will also install expo, when asked if you would like to continue with the expo instillation, press ‘y’.
 
 6. A new browser window will be opened after the builds are complete. The page will give you the option to start the application on an Android device/emulator, run on an iOS simulator, or run in the web browser. You can select your preferred option. 
 
