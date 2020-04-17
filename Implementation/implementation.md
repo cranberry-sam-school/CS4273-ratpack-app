@@ -13,6 +13,10 @@ Server-side authentication is handled through the use of Amazon Web Services' Ke
 
 # Database
 
+  The database was made using postgres, as it has a column based storage structure, allowing the administrator to make certain columns accessible on a per user basis. It also allows for easier expansion and it has a robust security system. 
+    For the purpose of this project, the database stores information on users, groups, messages, and admins, each having multiple sections or tables dedicated to them. The administrator of the database is able to retrieve most information, passwords excluded, while general users may look at their own messages and schedules, unless they have been given extra permissions by the admistrator. 
+    The database also deals with acknowledgement requests/responses, as well as maintaing and deleting messages.
+
 # Client
 
 The client user interface is was written using JavaScript and React Native. This decision was made by the previous group so less code has to be rewritten for the android, iOS, and web versions of the application. The client application is made up of an app container, which contains three main navigation stacks: the app drawer navigator, the authorization navigator, and the contact navigator. The app drawer is a custom navigation drawer that allows the user to navigate between the three main screens of the application: user profile, chat, and contacts. Our sponsor has decided to focus more on the contact list feature of the application, but we opted to keep this navigation drawer in place, since it has already been created, and we cannot contact our sponsor for clarification. 
