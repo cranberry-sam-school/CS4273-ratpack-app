@@ -5,6 +5,12 @@
 
 # Server
 
+The server is written in Golang, a decision made by our previous group. Golang has a highly developed set of extensions for web applications and is fairly intuitive for programmers already familiar with C and similar languages - making it a good choice for the development of the serverside.
+
+The server is implemented through two parts: First a router using Gorilla/mux allows our client app's requests to be directed to the actual functions that implement the API's expected behavior. Then the remainder of the server serves as an abstraction to the underlying database - using a model-driven approach. Useful tables and views in the database are abstracted into *models*, Golang structures that represent the necessary information and behavior of the objects that the database tables represent. By interacting with these models our application is able to retrieve or update information in the database while most of the actual database implementation is hidden from the client programs.
+
+Server-side authentication is handled through the use of Amazon Web Services' Key Management Service. At present a XSalsa20 key has been encrypted using KMS. At application startup the encrypted copy of this key is communicated to AWS over a secure connection - which then returns the actual key over the same secure encryption. The use of KMS has been validated to meet Federal Information Processing Standard 140-2. The key is then used in Golang's native sealed-box cryptography to encrypt messages to/from the client. Given the obvious flaw with this method we are in the process of converting to asymmetric encryption, where the client will posses a public key while the server posses an unknown private key. Implementation here is slow as the asymmetric key types (Curve25519) that play well with sealed-box cryptography are not on the approved list of cryptography implementations for our sponsor.
+
 # Database
 
 # Client
